@@ -1,5 +1,6 @@
+import AdminLayout from "./layouts/AdminLayout";
 const App = () => {
-  return <div>Hello World</div>;
+  return <AdminLayout />;
 };
 
 export default App;

@@ -13,11 +13,19 @@ const BestRecordBySteps = () => {
       <Text fontSize="sm" color="#666" mb="4">
         Fastest time at 3,000, 4,000, and 5,000 steps.
       </Text>
-      <Flex gap="10" flexWrap="wrap">
+      <Flex gap="4" flexWrap="wrap">
         {STEP_MILESTONES.map((steps) => {
           const best = bestTimeForStepTarget(steps);
           return (
-            <Box key={steps}>
+            <Box
+              key={steps}
+              p="5"
+              minW="160px"
+              flex="1"
+              borderWidth="1px"
+              borderColor="black"
+              bg="white"
+            >
               <Flex align="baseline" gap="2">
                 <Text fontSize="3xl" fontWeight="semibold" lineHeight="1">
                   {steps.toLocaleString()}

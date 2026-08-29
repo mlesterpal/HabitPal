@@ -3,9 +3,9 @@ import AdminLayout from "../layouts/AdminLayout";
 import HabitsPage from "./../pages/HabitsPage";
 import DashboardPage from "../pages/DashboardPage";
 import ExerciseTypesPage from "../pages/ExerciseTypesPage";
-import ExerciseTypePage from "../pages/ExerciseTypePage";
 import WeightLiftingPage from "../pages/WeightLiftingPage";
 import MuscleGroupPage from "../pages/MuscleGroupPage";
+import RunningPage from "../pages/RunningPage";
 import MusclePartPage from "../pages/MusclePartPage";
 
 const AppRoutes = () => {
@@ -28,10 +28,7 @@ const AppRoutes = () => {
           path="dashboard/exercise/weight-lifting/:muscleGroup/:musclePart"
           element={<MusclePartPage />}
         />
-        <Route
-          path="dashboard/exercise/:exerciseType"
-          element={<ExerciseTypePage />}
-        />
+        <Route path="dashboard/exercise/running" element={<RunningPage />} />
         <Route path="habits" element={<HabitsPage />} />
       </Route>
     </Routes>

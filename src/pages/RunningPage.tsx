@@ -1,5 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 import BackLink from "../components/exercise/BackLink";
+import BestRecordBySteps from "../components/exercise/BestRecordBySteps";
 import RunningLog from "../components/exercise/RunningLog";
 
 const RunningPage = () => {
@@ -9,6 +10,7 @@ const RunningPage = () => {
       <Text fontSize="2xl" fontWeight="semibold" mb="6">
         Running
       </Text>
+      <BestRecordBySteps />
       <RunningLog />
     </Box>
   );

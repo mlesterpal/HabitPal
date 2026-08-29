@@ -6,7 +6,11 @@ import { runLog } from "./runLog";
 
 const RunningLog = () => {
   return (
-    <Box display="flex" flexDirection="column" gap="4">
+    <Box>
+      <Text fontSize="lg" fontWeight="semibold" mb="4">
+        Run log
+      </Text>
+      <Box display="flex" flexDirection="column" gap="4">
       {runLog.map((run) => (
         <Box key={run.id}>
           <Text>{formatLiftDate(run.date)}</Text>
@@ -22,6 +26,7 @@ const RunningLog = () => {
           </Flex>
         </Box>
       ))}
+      </Box>
     </Box>
   );
 };

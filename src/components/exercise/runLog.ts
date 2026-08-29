@@ -19,3 +19,14 @@ export const runLog: RunEntry[] = [
   { id: "4", date: daysAgoIso(4), minutes: 20, steps: 2500 },
   { id: "5", date: daysAgoIso(6), minutes: 36, steps: 4900 },
 ];
+
+export const STEP_MILESTONES = [3000, 4000, 5000];
+
+export function bestTimeForStepTarget(
+  stepsTarget: number,
+  entries: RunEntry[] = runLog,
+) {
+  const qualifying = entries.filter((run) => run.steps >= stepsTarget);
+  if (qualifying.length === 0) return undefined;
+  return [...qualifying].sort((a, b) => a.minutes - b.minutes)[0];
+}

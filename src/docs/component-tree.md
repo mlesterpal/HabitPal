@@ -61,6 +61,7 @@ ExerciseTypePage          (Basketball)
 ```
 RunningPage               /admin/dashboard/exercise/running
  ├── BackLink
+ ├── BestRecordBySteps    best minutes at 3k / 4k / 5k steps + date
  └── RunningLog           date, minutes, steps
 ```
 
@@ -69,7 +70,8 @@ RunningPage               /admin/dashboard/exercise/running
 | **ExerciseTypesPage** | List of exercise kinds. |
 | **ExerciseTypeCard** | One kind. Click opens that kind’s page. |
 | **ExerciseTypePage** | Simple page for Basketball. |
-| **RunningPage** | Running home. Shows the run log. |
+| **RunningPage** | Running home. Stats, then the run log. |
+| **BestRecordBySteps** | Best time at 3k / 4k / 5k steps, plus the date of that run. |
 | **RunningLog** | Each run: date, minutes, steps. Plain text. |
 | **BackLink** | Shared “← previous page” link. |
 

@@ -1,7 +1,7 @@
 import HabitDashboard from "../components/dashboard/HabitDashboard";
 
-const HabitsPage = () => {
+const DashboardPage = () => {
   return <HabitDashboard />;
 };
 
-export default HabitsPage;
+export default DashboardPage;

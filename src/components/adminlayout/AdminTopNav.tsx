@@ -1,4 +1,4 @@
-import { Flex, Heading, Text, Button } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 interface AdminTopNavProps {
   setIsSidebarOpen: (open: boolean) => void;
@@ -8,32 +8,60 @@ interface AdminTopNavProps {
 const AdminTopNav = ({ setIsSidebarOpen, isMobile }: AdminTopNavProps) => {
   return (
     <Flex
+      as="header"
       align="center"
       justify="space-between"
-      px={4}
-      py={3}
+      h="14"
+      px="4"
+      bg="white"
       borderBottomWidth="1px"
-      borderColor="border"
-      bg="bg"
+      borderColor="black"
       position="sticky"
       top={0}
       zIndex="sticky"
     >
-      <Flex alignItems="center">
+      <Flex align="center" gap="3">
+        {isMobile && (
+          <Box
+            as="button"
+            aria-label="Open menu"
+            onClick={() => setIsSidebarOpen(true)}
+            fontFamily="var(--font-ui)"
+            fontSize="2xl"
+            lineHeight="1"
+            color="black"
+            cursor="pointer"
+            bg="transparent"
+            border="none"
+            p="0"
+          >
+            ≡
+          </Box>
+        )}
         <Text
-          bg="none"
+          fontFamily="var(--font-ui)"
+          fontSize="sm"
+          fontWeight="medium"
           color="black"
-          fontSize="xl"
-          font="semibold"
-          display={isMobile ? "flex" : "none"}
-          onClick={() => setIsSidebarOpen(true)}
-          pr="3.5"
         >
-          ≡
+          Admin
         </Text>
-        <Heading>Admin Top Nav</Heading>
       </Flex>
-      <Text>UserPal</Text>
+
+      <Flex
+        align="center"
+        justify="center"
+        w="8"
+        h="8"
+        bg="black"
+        color="white"
+        fontFamily="var(--font-ui)"
+        fontSize="xs"
+        fontWeight="semibold"
+        title="UserPal"
+      >
+        U
+      </Flex>
     </Flex>
   );
 };

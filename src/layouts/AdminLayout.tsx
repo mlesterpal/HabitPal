@@ -13,19 +13,19 @@ const AdminLayout = () => {
     }
   }, [isMobile]);
   return (
-    <Box>
-      <Flex>
+    <Box minH="100svh" bg="white" color="black">
+      <Flex minH="100svh">
         <AdminSidebar
           isSidebarOpen={isSidebarOpen}
           setIsSidebarOpen={setIsSidebarOpen}
           isMobile={isMobile}
         />
-        <Flex flex="1" direction="column" minW={0}>
+        <Flex flex="1" direction="column" minW={0} bg="white">
           <AdminTopNav
             setIsSidebarOpen={setIsSidebarOpen}
             isMobile={isMobile}
           />
-          <Box flex="1" background="blue.100">
+          <Box flex="1" minW={0} px="6" py="6" overflow="auto" fontFamily="var(--font-ui)">
             <Outlet />
           </Box>
         </Flex>

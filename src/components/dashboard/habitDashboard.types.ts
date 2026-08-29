@@ -4,6 +4,7 @@ export type Habit = {
   goal: number;
   color: string;
   completedByMonth: Record<string, number[]>;
+  href?: string;
 };
 
 export type MonthCursor = {

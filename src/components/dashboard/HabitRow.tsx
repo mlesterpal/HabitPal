@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import DayCheckCell from "./DayCheckCell";
 import type { Habit } from "./habitDashboard.types";
 
@@ -33,7 +34,16 @@ const HabitRow = ({
           borderRight: "1px solid #eee",
         }}
       >
-        {habit.name}
+        {habit.href ? (
+          <Link
+            to={habit.href}
+            style={{ color: "inherit", fontWeight: 600 }}
+          >
+            {habit.name}
+          </Link>
+        ) : (
+          habit.name
+        )}
       </td>
       {days.map((day) => (
         <DayCheckCell

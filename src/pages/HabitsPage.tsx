@@ -1,7 +1,6 @@
-import HabitDashboard from "../components/dashboard/HabitDashboard";
-
+import { Text } from "@chakra-ui/react";
 const HabitsPage = () => {
-  return <HabitDashboard />;
+  return <Text>Habits page</Text>;
 };
 
 export default HabitsPage;

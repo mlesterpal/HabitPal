@@ -41,7 +41,7 @@ DashboardPage
 | **MonthNavigator** | Previous / next month and the month label. |
 | **HabitMonthGrid** | Scrollable month table. |
 | **HabitGridHeader** | Column titles: Habits, weekdays, dates, Goal, Achieved. |
-| **HabitRow** | One habit: name (Exercise links to the exercise section), day cells, goal, achieved. |
+| **HabitRow** | One habit: name (Reading / Exercise link to those sections), day cells, goal, achieved. |
 | **DayCheckCell** | One day square. Click to toggle a check. |
 | **NewHabitForm** | “+ New Habit” and the name field. |
 
@@ -105,6 +105,27 @@ MusclePartPage                       /…/weight-lifting/triceps/long-head
 | **MusclePartCard** | One part. Click opens the lift log. |
 | **MusclePartPage** | Lifts for that part: date, time, weight, note. |
 
+## Reading (`/admin/dashboard/reading`)
+
+```
+ReadingTopicsPage
+ ├── BackLink
+ └── ReadingTopicCard     Atomic Habits, Ministry, How to Win Friends…
+
+BookReadingPage           /…/reading/atomic-habits
+ └── BackLink             book name, last page, dates read
+
+MinistryReadingPage       /…/reading/ministry
+ └── BackLink             ministry topic + date
+```
+
+| Name | What it does |
+| --- | --- |
+| **ReadingTopicsPage** | List of reading topics. |
+| **ReadingTopicCard** | One topic. Books open a page log; Ministry opens ministry topics. |
+| **BookReadingPage** | Book name, last page read, and dates. |
+| **MinistryReadingPage** | Ministry topic and date read. |
+
 ## Habits (`/admin/habits`)
 
 ```
@@ -117,7 +138,7 @@ HabitsPage
 
 ## Click path (exercise)
 
-Dashboard **Exercise** → types → **Basketball** / **Running** or **Weight Lifting** → **Triceps** → **Long head**.
+Dashboard **Reading** → topics → book or Ministry. **Exercise** → types → **Basketball** / **Running** or **Weight Lifting** → **Triceps** → **Long head**.
 
 ## Not components (data / helpers)
 
@@ -131,3 +152,5 @@ Dashboard **Exercise** → types → **Basketball** / **Running** or **Weight Li
 | `liftLog.ts` | Demo lifts and “last 7 days” filtering. |
 | `runLog.ts` | Demo runs: date, minutes, steps. |
 | `shotLog.ts` | Demo basketball sessions: date, shots, timer. |
+| `readingTopics.ts` | Reading topics (book vs ministry). |
+| `readingLog.ts` | Demo book pages and ministry sessions. |

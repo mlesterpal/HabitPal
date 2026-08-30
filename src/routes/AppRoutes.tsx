@@ -2,12 +2,15 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import AdminLayout from "../layouts/AdminLayout";
 import HabitsPage from "./../pages/HabitsPage";
 import DashboardPage from "../pages/DashboardPage";
-import ExerciseTypesPage from "../pages/ExerciseTypesPage";
+import ExerciseTypesPage from "../pages/exercise/ExerciseTypesPage";
 import WeightLiftingPage from "../pages/exercise/WeightLiftingPage";
 import MuscleGroupPage from "../pages/exercise/MuscleGroupPage";
 import BasketballPage from "../pages/exercise/BasketballPage";
 import RunningPage from "../pages/exercise/RunningPage";
 import MusclePartPage from "../pages/exercise/MusclePartPage";
+import ReadingTopicsPage from "../pages/reading/ReadingTopicsPage";
+import BookReadingPage from "../pages/reading/BookReadingPage";
+import MinistryReadingPage from "../pages/reading/MinistryReadingPage";
 
 const AppRoutes = () => {
   return (
@@ -33,6 +36,15 @@ const AppRoutes = () => {
         <Route
           path="dashboard/exercise/basketball"
           element={<BasketballPage />}
+        />
+        <Route path="dashboard/reading" element={<ReadingTopicsPage />} />
+        <Route
+          path="dashboard/reading/ministry"
+          element={<MinistryReadingPage />}
+        />
+        <Route
+          path="dashboard/reading/:bookSlug"
+          element={<BookReadingPage />}
         />
         <Route path="habits" element={<HabitsPage />} />
       </Route>

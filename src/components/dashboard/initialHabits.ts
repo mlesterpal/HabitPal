@@ -9,9 +9,10 @@ function seedCurrentMonth(days: number[]) {
 export const initialHabits: Habit[] = [
   {
     id: "1",
-    name: "Journal",
+    name: "Reading",
     goal: 20,
     color: PASTEL_HABIT_COLORS[0],
+    href: "/admin/dashboard/reading",
     completedByMonth: seedCurrentMonth([
       1, 2, 4, 8, 9, 11, 15, 16, 18, 22, 23, 25, 29,
     ]),

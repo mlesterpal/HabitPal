@@ -1,15 +1,15 @@
 import { Navigate, useParams } from "react-router-dom";
 import { Box, Text } from "@chakra-ui/react";
-import BackLink from "../components/exercise/BackLink";
+import BackLink from "../../components/exercise/BackLink";
 import {
   WEIGHT_LIFTING_BASE,
   getMusclePart,
-} from "../components/exercise/muscleGroups";
+} from "../../components/exercise/muscleGroups";
 import {
   formatLiftDate,
   formatLiftTime,
   liftsForMusclePart,
-} from "../components/exercise/liftLog";
+} from "../../components/exercise/liftLog";
 
 const MusclePartPage = () => {
   const { muscleGroup, musclePart } = useParams();

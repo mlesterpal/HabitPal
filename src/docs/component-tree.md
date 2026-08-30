@@ -54,8 +54,10 @@ ExerciseTypesPage
 ```
 
 ```
-ExerciseTypePage          (Basketball)
- └── BackLink
+BasketballPage            /admin/dashboard/exercise/basketball
+ ├── BackLink
+ ├── BestRecordByShots    best timer at 50 / 100 shots + date
+ └── BasketballRecordHistory  shots and timer, grouped by day
 ```
 
 ```
@@ -69,7 +71,9 @@ RunningPage               /admin/dashboard/exercise/running
 | --- | --- |
 | **ExerciseTypesPage** | List of exercise kinds. |
 | **ExerciseTypeCard** | One kind. Click opens that kind’s page. |
-| **ExerciseTypePage** | Simple page for Basketball. |
+| **BasketballPage** | Basketball home. Best records, then daily history. |
+| **BestRecordByShots** | Fastest timer at 50 and 100 shots, plus the date. |
+| **BasketballRecordHistory** | Each day’s shot sessions: shots and timer. |
 | **RunningPage** | Running home. Stats, then the run log. |
 | **BestRecordBySteps** | Best time at 3k / 4k / 5k steps, plus the date of that run. |
 | **RunningLog** | Each run: date, minutes, steps. Plain text. |
@@ -113,7 +117,7 @@ HabitsPage
 
 ## Click path (exercise)
 
-Dashboard **Exercise** → types → **Running** (log) or **Weight Lifting** → **Triceps** → **Long head**.
+Dashboard **Exercise** → types → **Basketball** / **Running** or **Weight Lifting** → **Triceps** → **Long head**.
 
 ## Not components (data / helpers)
 
@@ -126,3 +130,4 @@ Dashboard **Exercise** → types → **Running** (log) or **Weight Lifting** →
 | `muscleGroups.ts` | Chest, triceps, parts, and lift URL base. |
 | `liftLog.ts` | Demo lifts and “last 7 days” filtering. |
 | `runLog.ts` | Demo runs: date, minutes, steps. |
+| `shotLog.ts` | Demo basketball sessions: date, shots, timer. |

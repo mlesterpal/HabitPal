@@ -5,6 +5,7 @@ import DashboardPage from "../pages/DashboardPage";
 import ExerciseTypesPage from "../pages/ExerciseTypesPage";
 import WeightLiftingPage from "../pages/WeightLiftingPage";
 import MuscleGroupPage from "../pages/MuscleGroupPage";
+import BasketballPage from "../pages/BasketballPage";
 import RunningPage from "../pages/RunningPage";
 import MusclePartPage from "../pages/MusclePartPage";
 
@@ -29,6 +30,10 @@ const AppRoutes = () => {
           element={<MusclePartPage />}
         />
         <Route path="dashboard/exercise/running" element={<RunningPage />} />
+        <Route
+          path="dashboard/exercise/basketball"
+          element={<BasketballPage />}
+        />
         <Route path="habits" element={<HabitsPage />} />
       </Route>
     </Routes>

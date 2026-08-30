@@ -1,7 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
-import BackLink from "../components/exercise/BackLink";
-import BestRecordBySteps from "../components/exercise/BestRecordBySteps";
-import RunningLog from "../components/exercise/RunningLog";
+import BackLink from "../../components/exercise/BackLink";
+import BestRecordBySteps from "../../components/exercise/BestRecordBySteps";
+import RunningLog from "../../components/exercise/RunningLog";
 
 const RunningPage = () => {
   return (

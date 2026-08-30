@@ -1,8 +1,8 @@
 import { Box, SimpleGrid, Text } from "@chakra-ui/react";
-import MuscleGroupCard from "../components/exercise/MuscleGroupCard";
-import RecentLiftHistory from "../components/exercise/RecentLiftHistory";
-import BackLink from "../components/exercise/BackLink";
-import { muscleGroups } from "../components/exercise/muscleGroups";
+import MuscleGroupCard from "../../components/exercise/MuscleGroupCard";
+import RecentLiftHistory from "../../components/exercise/RecentLiftHistory";
+import BackLink from "../../components/exercise/BackLink";
+import { muscleGroups } from "../../components/exercise/muscleGroups";
 
 const WeightLiftingPage = () => {
   return (

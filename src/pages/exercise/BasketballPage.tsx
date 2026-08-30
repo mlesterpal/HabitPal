@@ -1,7 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
-import BackLink from "../components/exercise/BackLink";
-import BestRecordByShots from "../components/exercise/BestRecordByShots";
-import BasketballRecordHistory from "../components/exercise/BasketballRecordHistory";
+import BackLink from "../../components/exercise/BackLink";
+import BestRecordByShots from "../../components/exercise/BestRecordByShots";
+import BasketballRecordHistory from "../../components/exercise/BasketballRecordHistory";
 
 const BasketballPage = () => {
   return (

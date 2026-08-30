@@ -1,7 +1,7 @@
 import { Box, SimpleGrid, Text } from "@chakra-ui/react";
-import ExerciseTypeCard from "../components/exercise/ExerciseTypeCard";
-import BackLink from "../components/exercise/BackLink";
-import { exerciseTypes } from "../components/exercise/exerciseTypes";
+import ExerciseTypeCard from "../../components/exercise/ExerciseTypeCard";
+import BackLink from "../../components/exercise/BackLink";
+import { exerciseTypes } from "../../components/exercise/exerciseTypes";
 
 const ExerciseTypesPage = () => {
   return (
@@ -15,7 +15,10 @@ const ExerciseTypesPage = () => {
       </Text>
       <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap="4">
         {exerciseTypes.map((exerciseType) => (
-          <ExerciseTypeCard key={exerciseType.slug} exerciseType={exerciseType} />
+          <ExerciseTypeCard
+            key={exerciseType.slug}
+            exerciseType={exerciseType}
+          />
         ))}
       </SimpleGrid>
     </Box>

@@ -3,11 +3,11 @@ import AdminLayout from "../layouts/AdminLayout";
 import HabitsPage from "./../pages/HabitsPage";
 import DashboardPage from "../pages/DashboardPage";
 import ExerciseTypesPage from "../pages/ExerciseTypesPage";
-import WeightLiftingPage from "../pages/WeightLiftingPage";
-import MuscleGroupPage from "../pages/MuscleGroupPage";
-import BasketballPage from "../pages/BasketballPage";
-import RunningPage from "../pages/RunningPage";
-import MusclePartPage from "../pages/MusclePartPage";
+import WeightLiftingPage from "../pages/exercise/WeightLiftingPage";
+import MuscleGroupPage from "../pages/exercise/MuscleGroupPage";
+import BasketballPage from "../pages/exercise/BasketballPage";
+import RunningPage from "../pages/exercise/RunningPage";
+import MusclePartPage from "../pages/exercise/MusclePartPage";
 
 const AppRoutes = () => {
   return (
